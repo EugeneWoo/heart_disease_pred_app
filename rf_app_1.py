@@ -20,9 +20,7 @@ model = joblib.load("randomforest_heartdisease.joblib")
 
 # set up the streamlit page settings
 st.set_option('deprecation.showPyplotGlobalUse', False)
-st.set_page_config(page_title="Heart Disease Psychic"
-#                     ,page_icon="![heart_disease.png](attachment:heart_disease.png)"
-                       ,layout="wide")
+st.set_page_config(page_title="Heart Disease Psychic", layout="wide")
 
 
 # In[ ]:
@@ -43,7 +41,7 @@ def main():
         st.write(f"You selected option {sex_option} representing {format_func(sex_option)}")
 
         bp_option = st.sidebar.slider("What is your systolic blood pressure in mmHg?", 90, 210, value=90)
-        st.write("Your systolic blood pressure is", bp_option, "mmHg."")
+        st.write("Your systolic blood pressure is", bp_option, "mmHg.")
 
         cholestrol_option = st.sidebar.slider("What is your total cholesterol level in mg/dL?", 120, 570, value=120)
         st.write("Your total cholesterol is", cholestrol_option, "mg/dL.")
