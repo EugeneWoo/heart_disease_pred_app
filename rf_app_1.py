@@ -57,12 +57,12 @@ def main():
     
     def hd_predict(prediction):
         if prediction == 0:
-        hd_pred = 'living a life free of heart disease.'
-        pred_prob = rf_best.predict_proba(input_1)[0][prediction]
-    else: 
-        hd_pred = 'suffering from heart disease in future.'
-        pred_prob = round(rf_best.predict_proba(input_1)[0][prediction],2)*100
-    return(hd_pred,pred_prob)
+            hd_pred = 'living a life free of heart disease.'
+            pred_prob = rf_best.predict_proba(input_1)[0][prediction]
+        else: 
+            hd_pred = 'suffering from heart disease in future.'
+            pred_prob = round(rf_best.predict_proba(input_1)[0][prediction],2)*100
+        return(hd_pred,pred_prob)
 
     st.write("You have a",hd_predict(prediction)[1],"% probability of",hd_predict(prediction)[0])
 
