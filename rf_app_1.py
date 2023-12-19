@@ -6,7 +6,7 @@
 # import necessary libraries
 import pandas as pd
 import numpy as np
-import scikit-learn
+# import scikit-learn
 import streamlit as st
 import joblib
 import shap
