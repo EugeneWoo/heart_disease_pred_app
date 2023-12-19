@@ -3,7 +3,7 @@
 
 # In[ ]:
 
-pip install -r requirements_rfapp.txt -q
+!pip install -r requirements_rfapp.txt -q
 
 # import necessary libraries
 import pandas as pd
