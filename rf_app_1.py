@@ -3,12 +3,10 @@
 
 # In[ ]:
 
-!pip install -r requirements_rfapp.txt -q
-
 # import necessary libraries
 import pandas as pd
 import numpy as np
-import sklearn
+import scikit-learn
 import streamlit as st
 import joblib
 import shap
