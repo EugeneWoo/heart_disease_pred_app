@@ -1,1 +1,1 @@
-# heart_disease_pred_app
+Testing out my first app deployed to Streamlit community cloud. The user inputs their age, gender, systolic blood pressure, and total cholesterol, and gets a prediction of their probability of heart disease. 
