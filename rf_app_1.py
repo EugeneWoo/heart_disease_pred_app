@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
 # import necessary libraries
 import pandas as pd
 import numpy as np
@@ -16,10 +14,6 @@ model = joblib.load("randomforest_heartdisease.joblib")
 # set up the streamlit page settings
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.set_page_config(page_title="Heart Disease Psychic", layout="wide")
-
-
-# In[ ]:
-
 
 # Take input from users for numerical features  
 input_array = np.empty((1,4))
